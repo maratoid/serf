@@ -192,6 +192,6 @@ node["serf"]["agent"].each do |agent_name, agent_hash|
     log_directory   node["serf"]["log_directory"]
     conf_directory  node["serf"]["conf_directory"]
     agent           agent_hash
-    action [ :create, :start ] 
+    action [ :create, :enable, :start ] 
   end
 end
